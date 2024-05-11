@@ -1,0 +1,28 @@
+{% load static %}
+
+<nav>
+  <a href="#" class="nav-logo" aria-label="homepage" aria-current="page">
+    <img src="{% static 'images/python_django.png' %}" alt="defilepsie logo" />
+    <span>cookiecutter_django</span>
+  </a>
+  <div class="main-navlinks">
+    <button type="button" class="hamburger"  aria-label="Toggle Navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="navlinks-container">
+      <a href="#" aria-current="page">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Pricing</a>
+      <a href="#">Community</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="nav-authentication">
+    <div class="sign-btns">
+      <button type="button">Sign In</button>
+      <button type="button">Sign Up</button>
+    </div>
+  </div>
+</nav>

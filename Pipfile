@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# Django -----------------------------------------------------------------------
+django = "*"                # https://www.djangoproject.com/
+django-environ = "*"        # https://github.com/joke2k/django-environ
+pytest-django = "*"         # https://pytest-django.readthedocs.io/en/latest/
+
+[dev-packages]
+sentry-sdk = "*"            # https://docs.sentry.io/
+# BDD --------------------------------------------------------------------------
+redis = "*"                 # https://redis.io/
+celery = "*"                # https://docs.celeryq.dev/en/stable/index.html
+psycopg2 = "*"              # https://www.psycopg.org/docs/
+psycopg2-binary = "*"
+# Sphinx -----------------------------------------------------------------------
+sphinx = "*"                # https://www.sphinx-doc.org/en/master/index.html
+sphinx-inline-tabs = "*"    # https://sphinx-inline-tabs.readthedocs.io/en/latest/
+sphinx-lint = "*"           # https://github.com/sphinx-contrib/sphinx-lint
+sphinx-notfound-page = "*"  # https://sphinx-notfound-page.readthedocs.io/en/latest/
+sphinx-copybutton = "*"     # https://sphinx-copybutton.readthedocs.io/en/latest/
+sphinxext-opengraph = "*"   # https://sphinxext-opengraph.readthedocs.io/en/latest/socialcards.html
+sphinxext-rediraffe = "*"   # https://pypistats.org/packages/sphinxext-rediraffe
+python-docs-theme = "*"     # https://sphinx-themes.org/sample-sites/python-docs-theme/
+furo = "*"                  # https://pradyunsg.me/furo/customisation/
+
+[requires]
+python_version = "3.12"     # https://docs.python.org/3/
