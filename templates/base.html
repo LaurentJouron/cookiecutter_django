@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="FR">
+<html lang="{{ cookiecutter.language }}">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -8,16 +8,20 @@
     <meta name="description" content="Venir en aider et soutenir les épileptiques" />
     <meta name="author" content="Laurent Jouron" />
     <link rel="icon" href={% static 'images/python_django.png' %} />
-    <title>{% block title %}cookiecutter_django{% endblock title %}</title>
+    <title>{% block title %}{{ cookiecutter.project_name }}{% endblock title %}</title>
     <!-- style CSS -->
-    {% block css %}<link href="{% static 'css/style.css' %}" rel="stylesheet" />{% endblock css %}
-    <!-- Le javascript -->
-    {% block javascript %}<script defer src="{% static 'js/scripts.js' %}"></script>{% endblock javascript %}
+    {% block head_styles %}<link href="{% static 'css/style.css' %}" rel="stylesheet" />{% endblock head_styles %}
+    <!-- script javascript -->
+    {% block head_script %}<script defer src="{% static 'js/scripts.js' %}"></script>{% endblock head_script %}
   </head>
   <body>
-    {% include 'includes/navigation.html' %}
-    {% block content %}{% endblock content %}
+    {% block messages %}{% endblock messages %}
+    {% block navigation %}{% include 'includes/navigation.html' %}{% endblock navigation %}
+    {% block header %}{% endblock header %}
+    {% block outer_content %}{% endblock outer_content %}
     {% block modal %}{% endblock modal %}
-    {% include 'includes/footer.html' %}
+    {% block content %}{% endblock content %}
+    {% block footer %}{% include 'includes/footer.html' %}{% endblock footer %}
+    {% block bottom_scripts %}{% endblock bottom_scripts %}    
   </body>
 </html>

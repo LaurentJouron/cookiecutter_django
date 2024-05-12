@@ -8,6 +8,7 @@ name = "pypi"
 django = "*"                # https://www.djangoproject.com/
 django-environ = "*"        # https://github.com/joke2k/django-environ
 pytest-django = "*"         # https://pytest-django.readthedocs.io/en/latest/
+cookiecutter = "*"          # https://cookiecutter.readthedocs.io/en/stable/
 
 [dev-packages]
 sentry-sdk = "*"            # https://docs.sentry.io/

@@ -5,7 +5,7 @@ import time
 sys.path.append(os.path.abspath("tools/extensions"))
 sys.path.append(os.path.abspath("includes"))
 
-project = "cookiecutter_django"
+project = "{{ cookiecutter.project_name }}"
 copyright = f'2024-{time.strftime("%Y")}, Laurent Jouron'
 author = "Laurent Jouron"
 
@@ -48,9 +48,9 @@ html_theme = "furo"
 html_static_path = ["_static"]
 html_logo = "_static/python_django.png"
 html_favicon = "_static/python_django.png"
-html_title = "cookicutter_django"
+html_title = "{{ cookiecutter.project_name }}"
 html_theme_options = {
-    "source_repository": "https://github.com/LaurentJouron/defilepsie",
+    "source_repository": "https://github.com/LaurentJouron/{{ cookiecutter.project_name }}",
     "source_directory": "docs/",
     "source_branch": "master/source",
     "sidebar_hide_name": True,
@@ -71,7 +71,7 @@ html_theme_options = {
     "footer_icons": [
         {
             "name": "GitHub",
-            "url": "https://github.com/LaurentJouron/defilepsie",
+            "url": "https://github.com/LaurentJouron/{{ cookiecutter.project_name }}",
             "html": "",
             "class": "fa-brands fa-solid fa-github fa-2x",
         },
@@ -104,7 +104,7 @@ extlinks = {
 
 # sphinxext-opengraph config
 ogp_site_url = "https://laurentjouron.github.io/"
-ogp_site_name = "cookiecutter_name"
+ogp_site_name = "{{ cookiecutter.project_name }}"
 ogp_image = "_static/python_django.png"
 ogp_custom_meta_tags = [
     '<meta property="og:image:width" content="200">',

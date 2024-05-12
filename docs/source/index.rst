@@ -20,7 +20,7 @@ cookiecutter
    <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
    <strong>Envoyez moi un <a href="mailto:jouronlaurent@hotmail.com" target=_blank>e-mail</a></strong>
 
-* **Projet** : cookiecutter django
+* **Projet** : {{ cookiecutter.project_name }}
 
 * **Creation date** : avr. 22, 2024
 

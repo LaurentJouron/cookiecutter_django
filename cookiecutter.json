@@ -1,13 +1,28 @@
 {
     "project_name": "{{ cookiecutter.project_name }}",
     "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "description": "Description for README",
     "author_name": "{{ cookiecutter.author_name }}",
     "domain_name": "{{ cookiecutter.domain_name }}",
     "email": "{{ cookiecutter.author_name.lower() | trim() |replace(' ', '-') }}@{{ cookiecutter.domain_name.lower() | trim() }}",
     "version": "0.1.0",
+    "language": [
+      "fr",
+      "en"
+    ],
+    "python_version": [
+      "3.13",
+      "3.12",
+      "3.11"
+    ],
     "username_type": ["username", "email"],
     "timezone": ["UTC", "Europe/Paris"],
-    "postgresql_version": ["16", "15"],
+    "postgresql_version": ["latest", "16", "15"],
+    "postgresql_host": "localhost",
+    "postgresql_port": "auto",
+    "postgresql_database": "postgres",
+    "postgresql_user": "postgres",
+    "postgresql_password": "postgres",
     "use_whitenoise": "n",
     "ci_tool": "Github"
   }
